@@ -30,8 +30,28 @@ section div {
     border-radius: 50%;
     
 }
+
+
 .s1 h1 {
     position: absolute;
     top: 45%;
     left: -150%;
+    transition: all 1s linear;
+}
+.s1 div:hover+h1 {
+    left: 10%;
+    color: red;
+}
+.s2 h1{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    opacity: 0;
+    transition: all 1s linear;
+}
+.s2 div:hover+h1{
+    opacity: 1;
+}
+div{
+    cursor: pointer;
 }
